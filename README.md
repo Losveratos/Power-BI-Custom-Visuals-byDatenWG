@@ -9,7 +9,7 @@ hier liegt immer die **aktuelle finale Version** jedes Visuals.
 | Visual | Version | Stand | Was es kann |
 | --- | --- | --- | --- |
 | [ChartKitchen byDatenWG](chartkitchen/) | 1.38.0.0 | 19.07.2026 | IBCS-Komplettpaket in einem Visual: 13 Chart-Modi (Säulen, Balken, Linien, Waterfall/GuV-Brücke, GuV-Statement, IBCS-Tabelle & Matrix, Pareto, KPI-Kacheln u. v. m.), Szenario-Notation AC/PY/PL/FC, Δ-Panels, Small Multiples, In-Chart-Buttons, Kommentare, 4 Sprachen |
-| [PnL Waterfall](pnl-waterfall/) | 1.0.0.0 | Juli 2026 | IBCS-GuV-Wasserfall mit klappbarer Achse — P&L-Positionen als Brücke mit sum/delta-Logik |
+| [P&L Statement byDatenWG](pnl-statement/) | 0.5.0.0 | Juli 2026 | IBCS-GuV/P&L-Statement: unbalancierte Konten-Hierarchie (Parent-Child) aus einer Dimensionstabelle, Zwischensummen- und Formelzeilen (EBITDA, Margen), Vorzeichenkonventionen mit Varianz-Invert für Kostenzeilen, Szenarien AC/PY/PL/FC mit Δ-Balken und Δ%-Pins gegen eine wählbare Referenz, persistiertes Auf-/Zuklappen, k/m-Skalierung, 3-zeiliger IBCS-Titelblock |
 | [DataKitchen Gantt](gantt/) | 1.9.0.0 | 23.07.2026 | Projektplan-Gantt: 3-Ebenen-Hierarchie (Projekt → Phase → Vorgang), Basisplan Plan vs. Ist mit Δ-Spalte und Verzugs-Markierung, Meilensteinübersicht auf der Projektzeile, Statusdatum-Linie, Zeitachsen-Zoom Tage bis Jahre, MS-Project-Export-tauglich |
 | [Wärmestreifen 3D](warming-stripes-3d/) | 1.5.0.0 | 30.07.2026 | 3D-Wärmestreifen (X = Zeit, Z = Ort, Y = Abweichung): vier Darstellungsformen (Säulenfeld, Relief, Bänder, klassische Streifen-Tafeln), kuratierte Kameraperspektiven, Orbit-Steuerung, Aufbau-Animation, dynamische Referenzperiode, Glättung und Sortierung — inkl. Tooltips und Cross-Filtering |
 
