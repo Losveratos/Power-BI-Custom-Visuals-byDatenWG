@@ -1,5 +1,26 @@
 # Changelog · ChartKitchen byDatenWG
 
+## 1.54.0.0 (2026-11-19)
+
+**Backlog IBCS-Templates: mehr Blätter direkt abbildbar. Neue Schalter stehen standardmäßig aus;
+bestehende Berichte zeichnen unverändert, außer wo unten als Verhaltensänderung genannt.**
+
+- **Neue Vorlagen C14 bis C19** (Gruppe „Rangfolgen gegen Plan“): C14 Balkentabelle nach ΔPL (04A), C15 nach ΔPL % (04B),
+  C16 nach AC (04C), C17 Kategorie-Brücke waagerecht (06E), C18 Abweichungs-Scatter ΔPY % gegen ΔPL % (10F),
+  C19 Säulen gegen Plan mit Jahressäule (03B). Neu: Tabelle „Σ-Zeile als Szenario-Legende“ (`tableTotalLegend`);
+  Vorlagenwechsel setzt Einstellungen der vorherigen Vorlage auf Standard zurück.
+- **Jahressäule mit eigener Skala (03A, 03B).** `chart.yearColumn`: Σ-Säule AC + FC gegen PY bzw. PL rechts neben den
+  Monaten auf einem runden Bruchteil der Monatsskala, mit Skalenband; dazu `chart.yearColumnLabel` und
+  `chart.scenarioLabels`.
+- **Sortierung nach |Δ|, Δ, Δ % oder AC mit fester Rest-Zeile (06F bis 06H, 04A bis 04C).** Neue Property
+  `chart.sortMode` (Kategorie-Brücke, Wasserfall-Brücke, Balken); Rest-Zeilen (Rest, Others, Sonstige …) bleiben am Ende.
+  `chart.sortByImpact` bleibt als Altbestand, Berichte bis 1.53 zeichnen unverändert.
+- **Szenario-Notation im Stapel (01C).** Forecast schraffiert, Plan als getönter Umriss mit eigener Summe, Trennlinien
+  zwischen AC, FC und PL, Referenzlinie und Kommentar-Marker auch im Stapel. Verhaltensänderung: Plan ohne Ist,
+  Referenzlinie und „Trennlinie alle N“ im Stapel werden jetzt gezeichnet.
+- **Kleinteile.** „Art der Hervorhebung“ (`chart.highlightStyle`): Ellipse statt Band (04A, 06E); Margen, die auf null
+  runden, zeigen „0,0 %“ ohne Minus.
+
 ## 1.53.0.0 (2026-10-24)
 
 **Review-Paket: Zeilenstruktur als Datenvertrag, negative Brücken, Export-Layout, generierte Property-Referenz.
