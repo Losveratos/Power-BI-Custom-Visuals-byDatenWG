@@ -1,5 +1,24 @@
 # Changelog · ChartKitchen byDatenWG
 
+## 1.55.0.0 (2026-11-21)
+
+**Backlog IBCS-Templates Teil 2: weitere Blätter direkt abbildbar. Neue Schalter stehen standardmäßig aus;
+bestehende Berichte zeichnen unverändert, außer wo unten als Verhaltensänderung genannt.**
+
+- **Stapel-Struktur (01D, 01E, 02B bis 02E).** „Stapel-Skala“ 100 % mit Anteilen, Σ-Zeile im Stapel, Summen-Panel bei
+  100 %-Balken, Seriennamen links der ersten Säule, Sortierung nach erster Serie, Anteils-Klammer um die ersten N Zeilen (02C).
+  Verhaltensänderung: Top N bei Stapelbalken reiht ganze Kategorien; gespeichertes „Nach AC“ sortiert Stapelbalken nach der Summe.
+- **Differenzmarker und zweite Überleitung (01A, 01B, 05X).** `chart.diffMarkers`, z. B. „2025 > 2026“ oder
+  „2025 > 2026@Software“: Niveaulinie, Differenzbalken, Δ und Δ %; `chart.bridgeSecondNet` zeigt in der integrierten
+  Brücke die Abweichung zur zweiten Basis.
+- **Portfolio-Blasen (10A, 10B, 10D).** Wert in der Blase, Blasenradius, Deckkraft, Gruppenfarben 1 bis 6, Hervorhebung als
+  Farbe, neue Rolle „Blasengröße VJ“ für PY-Blasen mit eigener Größe.
+- **Small Multiples gegen Durchschnitt (13A, Teil von 13C).** Bezugskachel als Durchschnitt, zuletzt und hinterlegt, eigene
+  Titel mit {n}; „Abweichungsbasis der Kacheln“ = Durchschnitt aller Kacheln (ΔØ).
+- **Bestand und Fluss, Teil 1 (08E bis 08H).** Neuer Diagrammtyp mit Vorlage C20: Zu- und Abflüsse um die Nulllinie,
+  Bestandslinie mit Fläche, Netto-Panel im selben Maßstab, gruppierte Zeitachse; Zeilentypen `stock`, `inflow`, `outflow`.
+- **Verhaltensänderung:** Reine Planperioden tragen ihren PL-Wert und das Kürzel „PL“ (z. B. Monatsbild mit Planmonaten).
+
 ## 1.54.0.0 (2026-11-19)
 
 **Backlog IBCS-Templates: mehr Blätter direkt abbildbar. Neue Schalter stehen standardmäßig aus;
